@@ -13,7 +13,23 @@ public class Message {
         this.timestamp = timestamp;
     }
 
+    public Message(int id) {
+        this.id = id;
+        this.timestamp = new Date();
+    }
+
     public Message() {
+        this.timestamp =new Date();
+        this.id=getId();
+        this.content=getContent();
+
+    }
+
+
+    public Message(int id, String content) {
+        this.id = id;
+        this.content = content;
+        this.timestamp = new Date();
     }
 
     public int getId() {

@@ -10,6 +10,8 @@ public class Group {
     }
 
     public Group() {
+        this.name=getName();
+        this.numberOfParticipants=getNumberOfParticipants();
     }
 
     public String getName() {

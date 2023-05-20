@@ -10,6 +10,8 @@ public class User {
     }
 
     public User() {
+        this.name=getName();
+        this.mobile=getMobile();
     }
 
     public String getName() {
